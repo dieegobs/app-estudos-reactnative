@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, Image } from 'react-native';
+import {View, Text, Image, ImageBackground } from 'react-native';
 
 const App = () => {
   return (
@@ -7,16 +7,11 @@ const App = () => {
       <Text>Olá Mundo</Text>
 
 
-     <Image
-        source={{uri: 'https://www.google.com.br/google.jpg'}}
-        style={{width: 300, height: 100}}
-      />
-
-    <Image
-        source={require('./assets/image.jpg')}
-        style={{width: 500, height: 500}}
-      
-      />
+     <ImageBackground 
+      source={require('./assets/image.jpg')} 
+      style={{ width:300, height: 200 }} >
+      <Text>Algum exemplo de texto</Text>
+     </ImageBackground>
 
 
     </View>  
