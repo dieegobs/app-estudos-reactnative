@@ -1,7 +1,14 @@
 import React from "react";
-import {View, Text, Image, ImageBackground } from 'react-native';
+import {View, Text, Image, ImageBackground, Button } from 'react-native';
 
 const App = () => {
+
+  //handle => gerencie o Botão 
+  const handleLoginBtn = () => {
+    alert('Olá mundo')
+  }
+
+
   return (
     <View>
       <Text>Olá Mundo</Text>
@@ -15,7 +22,7 @@ const App = () => {
      </ImageBackground>
 
 
-    <Button title="Clique em mim Agora"/>
+    <Button title="Logar" onPress={handleLoginBtn}/>
 
     </View>  
   );
