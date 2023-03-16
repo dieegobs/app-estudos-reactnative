@@ -15,6 +15,8 @@ const App = () => {
      </ImageBackground>
 
 
+    <Button title="Clique em mim Agora"/>
+
     </View>  
   );
 }
