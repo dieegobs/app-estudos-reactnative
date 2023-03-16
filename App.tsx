@@ -9,8 +9,9 @@ const App = () => {
 
      <ImageBackground 
       source={require('./assets/image.jpg')} 
-      style={{ width:300, height: 200 }} >
-      <Text>Algum exemplo de texto</Text>
+      style={{ width:300, height: 200 }} 
+      >
+      <Text style={{color: '#FFFFFF'}} >Algum exemplo de texto</Text>
      </ImageBackground>
 
 
