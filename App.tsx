@@ -18,7 +18,7 @@ const App = () => {
       source={require('./assets/image.jpg')} 
       style={{ width:300, height: 200 }} 
       >
-      <Text style={{color: '#FFFFFF'}} >Algum exemplo de texto</Text>
+      <Text onPress={handleLoginBtn} style={{color: '#FFFFFF'}} >Algum exemplo de texto</Text>
      </ImageBackground>
 
 
