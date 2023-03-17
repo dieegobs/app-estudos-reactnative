@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import {View, Text, Image, ImageBackground, Button } from 'react-native';
 
 const App = () => {
+
+  const [name, setName] = useState('Diego');
+  const [age, setAge] = useState(30);
+
 
   //handle => gerencie o Botão 
   const handleLoginBtn = () => {
@@ -11,18 +15,13 @@ const App = () => {
 
   return (
     <View>
-      <Text>Olá Mundo</Text>
+      <Text>Olá {name}</Text>
 
-
-     <ImageBackground 
-      source={require('./assets/image.jpg')} 
-      style={{ width:300, height: 200 }} 
-      >
-      <Text onPress={handleLoginBtn} style={{color: '#FFFFFF'}} >Algum exemplo de texto</Text>
-     </ImageBackground>
-
-
-    <Button title="Logar" onPress={handleLoginBtn}/>
+    <Button title="Mudar Bilu" onPress={() => setName('Bilu')}/>
+    <Button title="Mudar João " onPress={() => setName('João')}/>
+    <Button title="Mudar Matheus" onPress={() => setName('Matheus')}/>
+    <Button title="Mudar Alessandra" onPress={() => setName('Alessandra')}/>
+     
 
     </View>  
   );
