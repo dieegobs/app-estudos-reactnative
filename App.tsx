@@ -7,17 +7,22 @@ const App = () => {
   const [age, setAge] = useState(30);
 
 
-  //handle => gerencie o Botão 
-  const handleLoginBtn = () => {
-    alert('Olá mundo')
-  }
 
 
   return (
     <View>
       <Text>Olá {name}</Text>
 
-    <Button title="Mudar Bilu" onPress={() => setName('Bilu')}/>
+    <Button 
+      title="Mudar Bilu" 
+      onPress={ () => {
+        setName('Bilu');
+        setAge(20);
+      }
+    } 
+      
+      />
+
     <Button title="Mudar João " onPress={() => setName('João')}/>
     <Button title="Mudar Matheus" onPress={() => setName('Matheus')}/>
     <Button title="Mudar Alessandra" onPress={() => setName('Alessandra')}/>
