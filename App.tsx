@@ -6,12 +6,23 @@ const App = () => {
   const [name, setName] = useState('Diego');
   const [age, setAge] = useState(30);
 
-
+  const handleClear = () => {
+    setName('');
+    setAge(0);
+  }
 
 
   return (
     <View>
-      <Text>Olá {name}</Text>
+      <Text>Olá {name} </Text>
+
+    <Button
+      title="Limpar tudo"
+      onPress={handleClear}
+    
+    />
+    
+
 
     <Button 
       title="Mudar Bilu" 
