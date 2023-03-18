@@ -16,11 +16,15 @@ const App = () => {
     <View>
       <Text>Olá {name} </Text>
 
-    <Button
-      title="Limpar tudo"
-      onPress={handleClear}
+
+      { name != '' &&
+        <Button
+        title="Limpar tudo"
+        onPress={handleClear}
+      
+      />
+      }
     
-    />
     
 
 
