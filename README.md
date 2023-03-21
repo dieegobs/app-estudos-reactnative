@@ -3,7 +3,6 @@
 
 ```bash
 Listas
-# e
 Condicional
 
 ```
