@@ -1,4 +1,4 @@
-## Estudos sobre React Nativedjghhjg
+## Estudos sobre React Native
 
 
 ```bash
