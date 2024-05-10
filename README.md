@@ -1,4 +1,4 @@
-## Estudos sobre React Nativedsa
+## Estudos sobre React Native
 
 ```bash
 Hooks - useState 
